@@ -11,9 +11,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-  <div class="container">
-        <div class="text">
+    <header>
+        <nav>
+            <div class="logo">
+                <p>Alejandra <br>
+                Perez</p>
+            </div>
+            <!-- <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a class="prueba" href="#text">Work</a></li>
+                <li><a class="prueba" href="https://read.cv/spxncheese">Resume</a></li>
+                <li><a class="prueba" href="#contact">Contact</a></li>
+            </ul> -->
+        </nav>
+    </header>
+   
+    <section class="info">
+        <p>Hey, There 
+             Ale here</p>
+        <h1>Creative developer</h1>
+        <h2>My aim is to create cool and functional digital experiences</h2>
+    </section>
+   
+    <div class="container" >
+        <section class="text" id="text">
             <p>I'm Alejandra</p>
             <p>A passionate creative developer</p>
             <p>and design lover</p>
@@ -22,7 +47,7 @@
 
     <footer>
         <div class="main">
-            <a href="#">alejandraperez101201@gmail.com</a>
+            <a href="mailto:alejandraperez101201@gmail.com">alejandraperez101201@gmail.com</a>
         </div>
         <div>
             <a href="#">Sonora, Mexico</a>
@@ -74,15 +99,15 @@
 
         <div class="redes">
                 <div>
-                    <a href="#" class="red">Instagram</a>
+                    <a href="https://github.com/Spxnch" class="red">GitHub</a>
                 </div>
                 <div>
-                    <a href="#" class="red">Figma</a>
-                    <a href="#" class="red">Linkedin</a>
+                    <a href="figma.com/@alejandraperez" class="red">Figma</a>
+                    <a href="www.linkedin.com/in/alejandra-perez101201" class="red">Linkedin</a>
                 </div>
                 
                 <div>
-                    <a href="#" class="red">Twitch</a>
+                    <a href="https://bento.me/spxncheese" class="red">Bento</a>
                 </div>
         
         </div>
@@ -178,6 +203,17 @@
                 element,
                 rotateTo,
             };
-        }
+        }  
+
+
+                document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+        });
     </script>
 </html>
